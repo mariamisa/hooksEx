@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Input({ handelChange, inputName, otherProps }) {
+export default function Input({ handelChange, inputName,placeholder,type, otherProps }) {
   return (
-    <input onChange={handelChange} name={inputName} {...otherProps} />
+    <input onChange={handelChange} placeholder={placeholder} type={type} name={inputName} {...otherProps} />
   );
 }
