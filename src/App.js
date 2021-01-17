@@ -4,6 +4,8 @@ import Counter from "./components/Counter";
 import Colors from "./components/Colors";
 import Todo from "./components/Todo";
 import SignUp from "./components/SignUpForm";
+import CountEffect from "./components/CountEffect";
+import ColorEffect from "./components/ColorEffect";
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
       <hr />
       <h1>sign up</h1>
       <SignUp />
+      <h1>make effect</h1>
+      <CountEffect />
+      <h1>background color with mousemove</h1>
+      <ColorEffect />
     </div>
   );
 }
