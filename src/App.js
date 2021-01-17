@@ -6,6 +6,7 @@ import Todo from "./components/Todo";
 import SignUp from "./components/SignUpForm";
 import CountEffect from "./components/CountEffect";
 import ColorEffect from "./components/ColorEffect";
+import Translator from "./components/Translator";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <CountEffect />
       <h1>background color with mousemove</h1>
       <ColorEffect />
+      <h1>translator</h1>
+      <Translator />
     </div>
   );
 }
