@@ -7,6 +7,7 @@ import SignUp from "./components/SignUpForm";
 import CountEffect from "./components/CountEffect";
 import ColorEffect from "./components/ColorEffect";
 import Translator from "./components/Translator";
+import RandomImage from "./components/ImageGenatare";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
       <ColorEffect />
       <h1>translator</h1>
       <Translator />
+      <h1>rendom images</h1>
+      <RandomImage/>
     </div>
   );
 }
