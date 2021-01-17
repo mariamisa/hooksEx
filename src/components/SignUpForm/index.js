@@ -32,36 +32,7 @@ export default function SignUp() {
 
   return (
     <>
-      <form onSubmit={(e) => e.preventDefault()}>
-        <Input
-          type="email"
-          inputName="email"
-          handelChange={({ target: { value } }) => setEmail(value)}
-          placeholder="enter your email"
-          value={email}
-        />
-        <Input
-          type="password"
-          inputName="password"
-          handelChange={({ target: { value } }) => setPassword(value)}
-          placeholder="enter your password"
-          value={password}
-        />
-        <Input
-          type="password"
-          inputName="confirmPassword"
-          handelChange={({ target: { value } }) => setConfirmPassword(value)}
-          placeholder="enter confirm password"
-          value={confirmPassword}
-        />
-        <Button btnName="submit" handelClick={handelSubmit}>
-          submit info
-        </Button>
-        <Button btnName="reset" type="reset">
-            reset
-          </Button>
-      </form>
-      {ok && (
+      {ok ? (
         <>
           <p>user data</p>
           <p>your email is : {email}</p>
@@ -70,6 +41,36 @@ export default function SignUp() {
             delete info
           </Button>
         </>
+      ) : (
+        <form onSubmit={(e) => e.preventDefault()}>
+          <Input
+            type="email"
+            inputName="email"
+            handelChange={({ target: { value } }) => setEmail(value)}
+            placeholder="enter your email"
+            value={email}
+          />
+          <Input
+            type="password"
+            inputName="password"
+            handelChange={({ target: { value } }) => setPassword(value)}
+            placeholder="enter your password"
+            value={password}
+          />
+          <Input
+            type="password"
+            inputName="confirmPassword"
+            handelChange={({ target: { value } }) => setConfirmPassword(value)}
+            placeholder="enter confirm password"
+            value={confirmPassword}
+          />
+          <Button btnName="submit" handelClick={handelSubmit}>
+            submit info
+          </Button>
+          <Button btnName="reset" type="reset">
+            reset
+          </Button>
+        </form>
       )}
     </>
   );
