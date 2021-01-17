@@ -38,18 +38,21 @@ export default function SignUp() {
           inputName="email"
           handelChange={({ target: { value } }) => setEmail(value)}
           placeholder="enter your email"
+          value={email}
         />
         <Input
           type="password"
           inputName="password"
           handelChange={({ target: { value } }) => setPassword(value)}
           placeholder="enter your password"
+          value={password}
         />
         <Input
           type="password"
           inputName="confirmPassword"
           handelChange={({ target: { value } }) => setConfirmPassword(value)}
           placeholder="enter confirm password"
+          value={confirmPassword}
         />
         <Button btnName="submit" handelClick={handelSubmit}>
           submit info
@@ -61,8 +64,8 @@ export default function SignUp() {
       {ok && (
         <>
           <p>user data</p>
-          <p>your email is ,{email}</p>
-          <p>your password is ,{password}</p>
+          <p>your email is : {email}</p>
+          <p>your password is : {password}</p>
           <Button handelClick={deleteInfo} btnName="deleteInfo" type="submit">
             delete info
           </Button>

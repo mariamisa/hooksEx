@@ -11,6 +11,7 @@ export default function Todo() {
   const addTodo = () => {
     setTodo([...todo, { id: idCount, description: inputValue }]);
     setIdCount((oldCount) => oldCount + 1);
+    setInputValue("");
   };
   const handelDeleteTodo = (idDeleted) => {
     const newArray = todo.filter(({ id }) => id !== idDeleted);
@@ -23,6 +24,7 @@ export default function Todo() {
         handelChange={({ target: { value } }) => setInputValue(value)}
         inputName="todoInput"
         placeholder="inter a todo"
+        value={inputValue}
       />
       <Button handelClick={addTodo}>ADD TODO</Button>
       <div>

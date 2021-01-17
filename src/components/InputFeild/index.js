@@ -1,7 +1,21 @@
 import React from "react";
 
-export default function Input({ handelChange, inputName,placeholder,type, otherProps }) {
+export default function Input({
+  handelChange,
+  inputName,
+  placeholder,
+  type,
+  otherProps,
+  value,
+}) {
   return (
-    <input onChange={handelChange} placeholder={placeholder} type={type} name={inputName} {...otherProps} />
+    <input
+      onChange={handelChange}
+      placeholder={placeholder}
+      value={value}
+      type={type}
+      name={inputName}
+      {...otherProps}
+    />
   );
 }
