@@ -5,12 +5,17 @@ export default function Image() {
   const [result, setResult] = useState("");
 
   useEffect(() => {
+    let isCurrent = true;
     async function getTranslate() {
       const { url } = await fetch(`https://robohash.org/${word ? word : "a"}`);
-      console.log(url);
-      setResult(url);
+      if (isCurrent) {
+        setResult(url);
+      }
     }
     getTranslate();
+    return () => {
+      isCurrent = false;
+    };
   }, [word]);
   return (
     <div>

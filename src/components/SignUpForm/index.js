@@ -42,7 +42,7 @@ export default function SignUp() {
           </Button>
         </>
       ) : (
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) =>  e.preventDefault()}>
           <Input
             type="email"
             inputName="email"

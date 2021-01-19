@@ -6,7 +6,7 @@ import Todo from "./components/Todo";
 import SignUp from "./components/SignUpForm";
 import CountEffect from "./components/CountEffect";
 import ColorEffect from "./components/ColorEffect";
-import Translator from "./components/Translator";
+import Giphy from "./components/Giphy";
 import RandomImage from "./components/ImageGenatare";
 
 function App() {
@@ -27,10 +27,10 @@ function App() {
       <CountEffect />
       <h1>background color with mousemove</h1>
       <ColorEffect />
-      <h1>translator</h1>
-      <Translator />
+      <h1>Giphy</h1>
+      <Giphy />
       <h1>rendom images</h1>
-      <RandomImage/>
+      <RandomImage />
     </div>
   );
 }
