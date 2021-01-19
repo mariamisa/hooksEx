@@ -8,6 +8,7 @@ import CountEffect from "./components/CountEffect";
 import ColorEffect from "./components/ColorEffect";
 import Giphy from "./components/Giphy";
 import RandomImage from "./components/ImageGenatare";
+import Users from "./components/Users";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <Giphy />
       <h1>rendom images</h1>
       <RandomImage />
+      <h1>uers</h1>
+      <Users />
     </div>
   );
 }
