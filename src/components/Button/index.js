@@ -5,7 +5,7 @@ export default function Button({
   btnName,
   children,
   type,
-  otherProps,
+  ...otherProps,
 }) {
   return (
     <button onClick={handelClick} name={btnName} type={type} {...otherProps}>
