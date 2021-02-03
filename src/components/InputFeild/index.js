@@ -5,8 +5,8 @@ export default function Input({
   inputName,
   placeholder,
   type,
-  otherProps,
   value,
+  ...otherProps,
 }) {
   return (
     <input
